@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header{
+    background-image: url(./image/images\ \(12\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 70vh;
+} */
+header nav{
+    background-color: rgb(216, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+header nav ul{
+    display: inline-flex;
+    gap: 3em;
+}
+header nav a{
+    color: white ;
+}
+header nav ul li a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+header nav ul+img{
+    width: 3%;
+}
+header nav .sign{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    padding: 15px 30px;
+    border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.download img{
+    width: 7%;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    position: fixed;
+    /* background: transparent; */
+}
+body{
+    background-image: url(./image/background-cover.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    object-fit: fill; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wallet{
+    margin:0 20% 10em;
+} 
+.wallet .wal{
+    display: flex;
+    margin-left: 3.7em;
+    margin-bottom: 1em;
+}
+.wallet .wal a{
+    color: black;
+    font-weight: bolder;
+    padding-top: 2.5em;
+    width:45vh ;
+    height: 10vh;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+}
+.wallet .wal a:hover{
+    background-color: #fff;
+    border-bottom: 4px solid rgb(207, 6, 6);
+}
+.wallet .wal .active{
+    background-color: #fff;
+    border-bottom: 4px solid rgb(207, 6, 6);
+}
+.wallet .wal + div{
+    width: 65%;
+    height: 28vh;
+    margin-left: 7em;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 40px;
+    border: 1px solid lightgray;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.wallet .wal + div .amount{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.wallet .wal + div p:first-child{
+    margin: 1em 0 1em;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.wallet .wal + div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 1em;
+}
+.wallet .wal + div div a{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 1em 1.7em;
+    background-color: rgb(206, 5, 5);
+    color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.wallet .wal + div div a:hover{
+    background-color:#fff;
+    color:  rgb(206, 5, 5);
+    border: 1px solid rgb(206, 5, 5);
+
+}
+.wallet .wal + div div a img:hover{
+    background-color: red;
+}
+.wallet div:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 3em 0 1em;
+}
+.wallet div:nth-of-type(3) p{
+    font-size: 1.2em;
+    font-weight: bolder;
+    opacity: 0.6;
+}
+.wallet div:nth-of-type(3) a{
+    color: black;
+    text-decoration: underline;
+}
+.wallet figure{
+    background-color:#f8f9fa;
+    height: 45vh;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.wallet figure p{
+    color: rgb(130, 130, 130);
+    margin-top: 1em;
+}
+.wallet figure p span{
+    display: block;
+    margin-top: 1em;
+}
+#History{
+     margin:0 20% 10em;
+}
+.History .see{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 3em 0 1em;
+} 
+.History .see  p{
+    font-size: 1.2em;
+    font-weight: bolder;
+    opacity: 0.6;
+}
+.History .see div{
+    width: 27%;
+    padding: 1em;
+    display: flex;
+    gap: 2em;
+    background-color: rgb(221, 6, 6);
+    color: #fff;
+}
+.History .see div select{
+    color: #fff;
+    padding-left:-10em ;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    background: none;
+
+}
+.History .see div select option{
+    background-color:#f8f9fa;
+    color: #000;
+}
+.History figure{
+     background-color:#f8f9fa;
+    height: 45vh;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.History figure p{
+    color: rgb(130, 130, 130);
+    margin-top: 1em
+}
+.History figure p span{
+    display: block;
+    margin-top: 1em;
+}
+footer{
+    margin-top: 5em;
+}
+footer nav{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+    align-items: center;
+    padding: 1.5em 0;
+}
+footer nav ul{
+    display:flex;
+    gap: 3em;
+}
+footer nav ul li:last-of-type{
+    margin-left: 5em;
+}
+footer nav ul li a{
+    color: #fff;
+}
+footer nav figure{
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+footer div{
+    text-align: center;
+    padding: 2em 0;
+    line-height: 1.5;
+    color: rgb(52, 51, 51);
+}
+footer div a{
+    color: rgb(185, 5, 5);
+}
+footer div p:last-of-type{
+    font-size:1.2em;
+    font-weight: bold;
+}

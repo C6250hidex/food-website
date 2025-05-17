@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: url(./image/store-location_1636708628.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 70vh;
+    
+    
+    
+}
+header nav{
+    background-color: rgb(216, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+header nav ul{
+    display: inline-flex;
+    gap: 3em;
+}
+header nav a{
+    color: white ;
+}
+header nav ul li a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+header nav ul+img{
+    width: 3%;
+}
+header nav .sign{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    padding: 15px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+header + div{
+    background-color: rgb(234, 10, 10) ;
+    width: 70%;
+    height: 1px;
+    margin: 0 15%;
+}
+.download img{
+    width: 7%;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    position: fixed;
+    background: transparent;
+
+}
+.about{
+    margin: 3em 17.5% 0;
+    text-align: center;
+    width: 65%;
+
+}
+.about h1{
+    font-size: 2.5em;
+    color: rgb(185, 5, 5);
+}
+.about p{
+    line-height: 1.5;
+    margin-top: 2em;
+}
+.about p span{
+    font-weight: bolder;
+}
+.about-image {
+    width: 88%;
+    margin:3em 6%;
+    overflow: hidden;
+   
+}
+.about-image div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    animation: scroll 20s linear infinite;
+}
+.about-image img{
+    width:30%;
+    height: 30vh;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+    100%{
+        transform: translateX(-80%);
+        -webkit-transform: translateX(-80%);
+        -moz-transform: translateX(-80%);
+        -ms-transform: translateX(-80%);
+        -o-transform: translateX(-80%);
+}
+    
+}
+.location{
+    margin: 5% 6% 4%;
+    
+
+}
+.location .under{
+    background-color: rgb(234, 10, 10) ;
+    width: 70%;
+    height: 1px;
+    margin: 6em 15%;
+    
+}
+.location h1{
+    color: rgb(234, 10, 10);
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.location .location-places {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.location .location-places figure{
+    width: 31.5%;
+    padding: 0.5em;
+    box-shadow:2px  2px 10px  rgb(31, 30, 30);
+}
+.location .location-places img{
+    width: 100%;
+    height: 40vh;
+
+}
+.location .location-places figure div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 0;
+}
+.location .location-places figure div p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.location .location-places figure div a{
+    background-color:rgb(221, 3, 3);
+    color: white;
+    font-weight: bold;
+    padding:15px 20px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.location-form{
+     margin:0 6% 3em;
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     align-items: center;
+     /* gap: 17.5em; */
+    
+}
+.location-form h1{
+    color: rgb(211, 8, 8);
+    margin-bottom: 1em;
+}
+.location-form form{
+    width: 40%; 
+   
+}
+.location-form form input,textarea{
+    display: block;
+    width: 100%;
+    padding: 1em;
+    outline: none;
+    border: 1px solid black;
+    border-bottom: none;
+    margin-top: 0.5em;
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+.location-form form button{
+    background-color: rgb(215, 11, 11);
+    color: #fff;
+   display: block;
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+.location-form form button:hover{
+    background-color: #fff;
+    color: rgb(215, 11, 11) ;
+}
+.location-form form + div{
+    width: 1px;
+    height: 40vh;
+    background-color:rgb(215, 11, 11);
+}
+.location-form aside{
+    width: 28%;
+}
+.location-form aside > p{
+    margin: 2em 0 ;
+    font-size: 1em;
+}
+.location-form aside p strong, .location-form aside div strong{
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+.location-form aside .email{
+     display: block;
+    font-size: 1.3em;
+    margin-top: 1em;
+}
+.location-form aside .email + p{
+    margin-top: 0.5em;
+}
+.location-form aside .email + p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.location-form aside div figure{
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    cursor: pointer;
+}
+.location-form aside div figure:hover{
+    text-decoration: underline;
+}
+footer{
+    margin-top: 5em;
+}
+footer nav{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+    align-items: center;
+    padding: 1.5em 0;
+}
+footer nav ul{
+    display:flex;
+    gap: 3em;
+}
+footer nav ul li:last-of-type{
+    margin-left: 5em;
+}
+footer nav ul li a{
+    color: #fff;
+}
+footer nav figure{
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+footer div{
+    text-align: center;
+    padding: 2em 0;
+    line-height: 1.5;
+    color: rgb(52, 51, 51);
+}
+footer div a{
+    color: rgb(185, 5, 5);
+}
+footer div p:last-of-type{
+    font-size:1.2em;
+    font-weight: bold;
+}

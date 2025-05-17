@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* header{
+    background-image: url(./image/images\ \(12\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 70vh;
+} */
+header nav{
+    background-color: rgb(216, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+header nav ul{
+    display: inline-flex;
+    gap: 3em;
+}
+header nav a{
+    color: white ;
+}
+header nav ul li a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+header nav ul+img{
+    width: 3%;
+}
+header nav .sign{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    padding: 15px 30px;
+    border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+/* header + div{
+    background-color: rgb(234, 10, 10) ;
+    width: 70%;
+    height: 1px;
+    margin: 0 15% 3em;
+} */
+.download img{
+    width: 7%;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    position: fixed;
+    background: transparent;
+
+}
+.giftcaerd{
+    margin: 5% 3%;
+}
+.giftcaerd .card{
+    margin-left: 15%;
+    display: flex;
+    align-items: start;
+}
+.giftcaerd .card div{
+    width: 47vh;
+    height: 3px;
+    background-color: rgb(203, 7, 7);
+}
+.giftcaerd .card label input{
+    display: block;
+    margin:0 0 1.5em 1.6em;
+    transform: scale(3);
+    -webkit-transform: scale(3);
+    -moz-transform: scale(3);
+    -ms-transform: scale(3);
+    -o-transform: scale(3);
+} 
+.giftcaerd .card label span{
+    font-weight: lighter;
+    text-align: center;
+}
+.giftcaerd  figure{
+    background-color: #f5f3f1;
+    text-align: center;
+    margin: 2em 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.giftcaerd  figure h3{
+    padding-top: 1.5em;
+}
+.giftcaerd  figure .card-sim{
+    display: flex;
+    padding: 2em;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.giftcaerd  figure .card-sim label{
+    width: 50vh;
+    display: flex;
+    align-items: start;
+    padding: 1em;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+.giftcaerd  figure .card-sim label div img{
+    margin: 0 2em;
+    width: 80%;
+}
+.giftcaerd  figure .card-sim label:has(input[type="radio"]:checked){
+    border: 2px solid rgb(181, 4, 4);
+}
+.giftcaerd  figure .card-sim label div p{
+    background-color: rgb(203, 7, 7);
+    color: #fff;
+    width: fit-content;
+    text-align: center;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    margin: 0 30%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+form{
+    width: 40%;
+    margin-left: 30%;
+
+}
+form .or{
+    margin:0 40% 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: rgb(181, 4, 4);
+    font-weight: bolder;
+}
+form .or div{
+    width: 5vh;
+    height: 2px;
+    background-color: rgb(185, 5, 5);
+}
+form .or + p{
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1em;
+}
+form label{
+    margin-left: 10%;
+    font-weight:lighter ;
+}
+form input{
+    background-color: #f5f3f1;
+    display: block;
+    width: 80%;
+    height: 8vh;
+    margin-top: 1em;
+    border: none;
+    outline: none;
+    margin-left: 10%;
+}
+form input::placeholder{
+    font-size: 1.2em;
+}
+form a{
+    display: block;
+    background-color: rgb(236, 87, 87);
+    color: #fff;
+    width: 80%;
+    font-weight: 500;
+    border-radius: 5px;
+    margin: 1em 10%;
+    text-align: center;
+    padding: 1em 0;
+}
+form a:hover{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    border: 2px solid  rgb(216, 10, 10);
+    opacity: 0.5;
+    border-radius: 5px;
+}
+footer nav{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+    align-items: center;
+    padding: 1.5em 0;
+}
+footer nav ul{
+    display:flex;
+    gap: 3em;
+}
+footer nav ul li:last-of-type{
+    margin-left: 5em;
+}
+footer nav ul li a{
+    color: #fff;
+}
+footer nav figure{
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+footer div{
+    text-align: center;
+    padding: 2em 0;
+    line-height: 1.5;
+    color: rgb(52, 51, 51);
+}
+footer div a{
+    color: rgb(185, 5, 5);
+}
+footer div p:last-of-type{
+    font-size:1.2em;
+    font-weight: bold;
+}

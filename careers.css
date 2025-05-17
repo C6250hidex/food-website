@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-image: url(./image/about-3_1636668677.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 70vh;
+}
+header nav{
+    background-color: rgb(216, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+
+}
+header nav ul{
+    display: inline-flex;
+    gap: 3em;
+}
+header nav a{
+    color: white ;
+}
+header nav ul li a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+header nav ul+img{
+    width: 3%;
+}
+header nav .sign{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    padding: 15px 30px;
+    border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+header + div{
+    background-color: rgb(234, 10, 10) ;
+    width: 70%;
+    height: 1px;
+    margin: 0 15% 3em;
+}
+.download img{
+    width: 7%;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    position: fixed;
+    background: transparent;
+
+}
+.career{
+    margin: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.career .car{
+    width:50% ;
+}
+.career .car h1{
+    font-size: 2em;
+    color:  rgb(216, 10, 10);
+    margin-bottom: 1em;
+    
+}
+.career .car p{
+    line-height: 2;
+    font-size: 1em;
+}
+.career .car p:last-of-type{
+    margin-top: 3em;
+}
+.career img{
+    width: 80vh;
+    height: 55vh;
+}
+.career aside{
+    width: 50%;
+    margin-left: 2em;
+}
+.career aside h1{
+    font-size: 2em;
+    color:  rgb(216, 10, 10);
+    margin-bottom: 1em;
+}
+.career aside .slide{
+    overflow: hidden;
+    width: 82.6vh;
+    height: 15vh;
+}
+.career aside .slide .test{
+    display: flex;
+    gap: 10px;
+    animation: scroll 50s ease-in-out infinite;
+    /* animation-delay: 50s; */
+   ;
+}
+.career aside .slide .test div{
+    background-color: rgba(216, 10, 10, 0.1);
+
+}
+.career aside .slide .test div p{
+    width: 82.6vh;
+    height: 15vh;
+    padding:1.5em 1em;
+    border: 2px solid  rgb(216, 10, 10);
+    word-spacing: 1px;
+    font-size: 1.1em;
+
+}
+.career aside .slide .test div p strong{
+    display: block;
+    text-align: right;
+    margin-top: 1.54em;
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-500%);
+    }
+    
+}
+footer{
+    margin-top: 5em;
+}
+footer nav{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+    align-items: center;
+    padding: 1.5em 0;
+}
+footer nav ul{
+    display:flex;
+    gap: 3em;
+}
+footer nav ul li:last-of-type{
+    margin-left: 5em;
+}
+footer nav ul li a{
+    color: #fff;
+}
+footer nav figure{
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+footer div{
+    text-align: center;
+    padding: 2em 0;
+    line-height: 1.5;
+    color: rgb(52, 51, 51);
+}
+footer div a{
+    color: rgb(185, 5, 5);
+}
+footer div p:last-of-type{
+    font-size:1.2em;
+    font-weight: bold;
+}

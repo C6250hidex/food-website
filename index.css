@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url(./image/background-cover.jpg);
+    /* background-repeat: no-repeat;  
+    background-size: cover;
+    /* object-fit: fill; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.download img{
+    width: 7%;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    position: fixed;
+    background: transparent;
+
+}
+header{
+    background-color: rgb(216, 10, 10);
+    padding: 10px;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+header nav ul{
+    display: inline-flex;
+    gap: 3em;
+}
+header nav a{
+    color: white ;
+}
+header nav ul li a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+header nav ul+img{
+    width: 3%;
+}
+header nav .sign{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    padding: 15px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.tasty{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 13rem; */
+
+}
+.tasty .left{
+    background-image: url(./image/left-banner-image.svg);
+    background-size: cover;
+    width: 18%;
+    margin:10px -5%;
+}
+.tasty .right{
+        background-image: url(./image/right-banner-image.svg);
+    background-size: cover;
+    width: 20%;
+
+}
+.tasty article{
+     margin-left: 15%;
+    border-bottom: 2px solid  rgb(216, 10, 10);
+    padding-bottom: 6.7%;
+    width: 90%;
+    
+}
+.tasty h1{
+    font-size: 4rem;
+    text-align: center;
+}
+.tasty .meals{
+    margin: 8% 0 6%;
+}
+.tasty .meals + p{
+    text-align: center;
+}
+.tasty .rad{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+   
+}
+.tasty label{
+     display: flex;
+     justify-content: space-between;
+     align-items: self-start;
+     background-color:rgb(246, 246, 246);
+     /*width: 70%;
+     */margin: 5% 0;
+     padding: 10px;
+     border: 2px solid rgb(186, 184, 184);
+     border-radius:5px ;
+     -webkit-border-radius:5px ;
+     -moz-border-radius:5px ;
+     -ms-border-radius:5px ;
+     -o-border-radius:5px ;
+}
+.tasty label p{
+    font-size: 0.9rem;
+}
+.tasty label p span{
+    font-size: 1.2em;
+    display: block;
+    font-weight: bolder;
+}
+.tasty label:has(input[type="radio"]:checked){
+    border: 2px solid rgb(207, 6, 6);
+
+}
+.tasty .rad + a{
+   background-color: rgb(236, 87, 87);
+   color: #fff;
+   font-size: 1.5em;
+   padding: 10px 100px;
+   margin-left: 30%;
+   border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+}
+.tasty .rad + a:hover{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    border: 2px solid  rgb(216, 10, 10);
+    opacity: 0.5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.gift{
+    margin-top: 4em;
+    height: fit-content;
+}
+
+.gift .Giftcard{
+    background-color: rgba(245, 184, 184,0.2) ;
+    display: flex;
+    
+    align-items: start;
+    
+}
+.gift .Giftcard aside{
+    margin-top: 6%;
+    width: 40%;
+}
+.gift .Giftcard aside p:first-child{
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 0.9em;
+}
+.gift .Giftcard aside p:last-of-type{
+    line-height: 1.5;
+    margin-bottom: 3em;
+}
+.gift .Giftcard aside a{
+    background-color:  rgb(221, 3, 3);
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 50px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.gift .Giftcard aside a:hover{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    border: 2px solid  rgb(216, 10, 10);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.gift .Giftcard + div{
+    display: flex;
+    background-color:  rgb(221, 3, 3);
+    margin-top: -5px;
+    height: 61.60vh;
+}
+.gift .Giftcard + div aside{
+    width: 50%; 
+    margin: 8% ;
+}
+.gift .Giftcard + div aside p {
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.gift .Giftcard + div aside p strong{
+    display: block;
+    margin-bottom: inherit;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+.gift .Giftcard + div aside a{
+    background-color:white ;
+    color: rgb(221, 3, 3);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 15px 50px;
+    border-radius: 3px;
+   
+}
+.gift .Giftcard + div aside a:hover{
+    background-color: rgb(216, 10, 10);
+    color:#fff ;
+    border: 2px solid  #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.location{
+    margin: 3em 0 12em;
+    text-align: center;
+}
+.location div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5em;
+    align-items: center;
+}
+.location div figure{
+    width: 26%;
+}
+.location div figure img{
+    width: 35%;
+ 
+}
+.location div figure img:hover{
+      transform: translatey(-20px);
+   
+}
+.location div figure p{
+    line-height: 1.5;
+}
+.location div figure p strong{
+    display: block;
+    font-size: 1.5em;
+    margin: 1.5em 0 1em;
+    color: rgb(221, 3, 3);
+}
+.Kilimeals {
+    background-color: rgb(221, 3, 3);
+    color: #fff;
+    height: 50vh;
+    display: flex; 
+    padding-left: 5em;
+    padding-top: 5em;
+    margin-bottom: 5em;
+    justify-content: space-between;
+    
+}
+.Kilimeals div:first-of-type {
+    width: 40%;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.Kilimeals div:first-of-type figure{
+    display:flex;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+.Kilimeals div:first-of-type figure img{
+    width: 25%;
+}
+.Kilimeals div:last-of-type {
+    display: flex;
+}
+.Kilimeals div:last-of-type img{
+    width: 100%;
+    height: 65vh;
+    margin-top: -8em;
+} 
+.Kilimeals div:last-of-type img:last-of-type{
+    margin-left: -60px;
+}
+
+
+footer{
+    margin-top: 10em;
+}
+footer nav{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+    align-items: center;
+    padding: 1.5em 0;
+}
+footer nav ul{
+    display:flex;
+    gap: 3em;
+}
+footer nav ul li:last-of-type{
+    margin-left: 5em;
+}
+footer nav ul li a{
+    color: #fff;
+}
+footer nav figure{
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+footer div{
+    text-align: center;
+    padding: 2em 0;
+    line-height: 1.5;
+    color: rgb(52, 51, 51);
+}
+footer div a{
+    color: rgb(185, 5, 5);
+}
+footer div p:last-of-type{
+    font-size:1.2em;
+    font-weight: bold;
+}

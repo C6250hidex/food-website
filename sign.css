@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.download img{
+    width: 7%;
+    position: absolute;
+    right: 0%;
+    bottom: 0;
+    position: fixed;
+    background: transparent;
+
+}
+header{
+    background-color: rgb(216, 10, 10);
+    padding: 10px;
+    margin-bottom: 1em;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+header nav ul{
+    display: inline-flex;
+    gap: 3em;
+}
+header nav a{
+    color: white ;
+}
+header nav ul li a:hover{
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+header nav ul+img{
+    width: 3%;
+}
+header nav .sign{
+    background-color: #fff;
+    color:  rgb(216, 10, 10);
+    padding: 15px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.signin{
+    display: flex;
+    margin: 8em 6% 15em;
+    justify-content: space-between;
+}
+.signin form{
+    width: 40%;
+}
+.signin form p:first-of-type{
+    font-size: 2em;
+    font-weight: bolder;
+    color: rgb(216, 10, 10);
+    margin-bottom: 0.3em;
+}
+.signin form:first-child p:last-of-type{
+    margin-bottom: 1em;
+}
+.signin .line p{
+    text-align: center;
+    border: 2px solid rgb(216, 10, 10);
+    padding: 0.5em;
+    border-radius: 50%;
+}
+.signin .line div{
+    width: 2px;
+    height: 20vh;
+    background-color: rgb(216, 10, 10);
+    margin-left: 1em;
+}
+.signin form:first-child input{
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin: 1em 0 ;
+}
+.signin form:last-child input{
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin: 1.5em 0 ;
+}
+.signin form button{
+    display: block;
+    padding: 0.8em 1.5em;
+    margin: 1em 0 0.5em;
+    font-size: 1.1em;
+    border: none;
+     background-color: rgb(216, 10, 10);
+     color: #fff;
+}
+.signin form button:hover{
+    border: 2px solid rgb(216, 10, 10);
+    background-color: #fff;
+    color: rgb(216, 10, 10);
+}
+.signin form .Remember div {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.signin form .Remember div input{
+    width: 10%;
+}
+.signin form .Remember div label{
+    color: rgb(216, 10, 10);
+}
+.signin form .Remember{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.signin form a{
+    display: block;
+}
+.signin form .Remember a{
+    color: rgb(216, 10, 10);
+}
+.signin form .Remember a:hover{
+    color: black;
+}
+.signin form .Remember a:active{
+    color: red;
+}
+.signin form:last-of-type div {
+    display:flex;
+    align-items: first baseline;
+}
+.signin form:last-of-type div input{
+    width: 10%;
+}
+.signin form .signup{
+    color: rgb(36, 35, 35);
+    margin-bottom: 1em;
+}
+.signin form .google{
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    align-items: center;
+    width: 25%;
+    color: rgba(0, 0, 0, 0.54);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, rgba(0, 0, 0, 0.24) 0px 0px 1px 0px;
+    padding:5px 10px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-family: Roboto, sans-serif;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.signin form .google img{
+    width: 40%;
+}
+
+.Kilimeals {
+    background-color: rgb(221, 3, 3);
+    color: #fff;
+    height: 50vh;
+    display: flex; 
+    padding-left: 5em;
+    padding-top: 5em;
+    margin-bottom: 5em;
+    justify-content: space-between;
+    
+}
+.Kilimeals div:first-of-type {
+    width: 40%;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+.Kilimeals div:first-of-type figure{
+    display:flex;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+.Kilimeals div:first-of-type figure img{
+    width: 25%;
+}
+.Kilimeals div:last-of-type {
+    display: flex;
+}
+.Kilimeals div:last-of-type img{
+    width: 100%;
+    height: 65vh;
+    margin-top: -8em;
+} 
+.Kilimeals div:last-of-type img:last-of-type{
+    margin-left: -60px;
+}
+footer{
+    margin-top: 10em;
+}
+footer nav{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10em;
+    align-items: center;
+    padding: 1.5em 0;
+}
+footer nav ul{
+    display:flex;
+    gap: 3em;
+}
+footer nav ul li:last-of-type{
+    margin-left: 5em;
+}
+footer nav ul li a{
+    color: #fff;
+}
+footer nav figure{
+    display: flex;
+    gap: 2em;
+    cursor: pointer;
+}
+footer div{
+    text-align: center;
+    padding: 2em 0;
+    line-height: 1.5;
+    color: rgb(52, 51, 51);
+}
+footer div a{
+    color: rgb(185, 5, 5);
+}
+footer div p:last-of-type{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
